@@ -1,0 +1,111 @@
+@import url('bootstrap');
+@import url('bootstrap-icons');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 0;
+}
+
+:root {
+  --milan-red: #C80000;
+  --milan-black: #000000;
+  --milan-navy: #020E64;
+}
+
+.bg-milan {
+  background-color: var(--milan-red) !important;
+}
+
+.text-milan {
+  color: var(--milan-red) !important;
+}
+
+.border-milan {
+  border-color: var(--milan-red) !important;
+}
+
+.btn-milan {
+  background-color: var(--milan-red);
+  border-color: var(--milan-red);
+  color: white;
+}
+
+.btn-milan:hover {
+  background-color: #a00000;
+  border-color: #a00000;
+  color: white;
+}
+
+.card-milan {
+  border-top: 3px solid var(--milan-red);
+  transition: transform 0.3s ease;
+}
+
+.card-milan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-milan th {
+  background-color: var(--milan-navy);
+  color: white;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.player-card {
+  transition: all 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.02);
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  background-color: var(--milan-black);
+}
