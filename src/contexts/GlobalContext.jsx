@@ -33,7 +33,6 @@ function GlobalProvider({ children }) {
     useEffect(fetchTeams, []);
 
     const teamMilan = teams.find(team => team.nome == "Milan")
-    console.log(teamMilan);
 
     return (
         <GlobalContext.Provider value={{ isLoading, setIsLoading, teamMilan }}>

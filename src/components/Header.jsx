@@ -70,7 +70,7 @@ export default function Header() {
                                 <li className="nav-item">
                                     <Link
                                         className={`nav-link ${isActive('/matches') ? 'active bg-black' : ''} text-white `}
-                                        to="/matches"
+                                        to="/games"
                                     >
                                         Partite
                                     </Link>
