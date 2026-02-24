@@ -9,7 +9,7 @@ function GlobalProvider({ children }) {
     // variabili di stato che voglio condividere
     const [isLoading, setIsLoading] = useState(false);
 
-    // memorizzare le squadre
+    /* // memorizzare le squadre
     const [teams, setTeams] = useState([]);
 
 
@@ -32,10 +32,10 @@ function GlobalProvider({ children }) {
     // effetto per recuperare le squadre al montaggio del componente
     useEffect(fetchTeams, []);
 
-    const teamMilan = teams.find(team => team.nome == "Milan")
+    const teamMilan = teams.find(team => team.nome == "Milan") */
 
     return (
-        <GlobalContext.Provider value={{ isLoading, setIsLoading, teamMilan }}>
+        <GlobalContext.Provider value={{ isLoading, setIsLoading, /* teamMilan  */ }}>
             {children}
         </GlobalContext.Provider>
     )

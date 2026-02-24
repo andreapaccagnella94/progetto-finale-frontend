@@ -33,8 +33,6 @@ export default function PlayerPage() {
 
     // mi assicuro che sia sempre un array per usare i metodi degli array
     const partite_giocate = Array.isArray(player?.games) ? player.games : [];
-    console.log(partite_giocate);
-
 
     // conteggio delle partite in cui il giocatore ha minuti giocati > 0
     const partiteConMinuti = partite_giocate.filter(g => g?.pivot && Number(g.pivot.minuti_giocati) > 0).length;
@@ -107,7 +105,7 @@ export default function PlayerPage() {
                                 src={`${import.meta.env.VITE_API_URL_IMG}/${player.foto}` || 'https://placehold.co/300x300?text=Foto+Non+Disponibile'}
                                 className="card-img-top"
                                 alt={player.cognome}
-                                style={{ objectFit: 'cover', height: '300px' }}
+                                style={{ objectFit: 'cover', height: '500px', objectPosition: 'top' }}
                             />
                             <div className="card-body text-center">
                                 <h3 className="card-title">{player.nome} {player.cognome}</h3>

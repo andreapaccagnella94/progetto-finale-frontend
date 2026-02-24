@@ -23,6 +23,7 @@ export default function HomePage() {
         );
     }
 
+    /*
     // evita di accedere a teamMilan.logo quando teamMilan è ancora undefined
     if (!teamMilan) {
         console.log('teamMilan non ancora disponibile');
@@ -36,7 +37,7 @@ export default function HomePage() {
                 </div>
             </div>
         );
-    }
+    }*/
 
     return (
         <>
@@ -44,7 +45,7 @@ export default function HomePage() {
             <div className="fade-in">
                 <div className="text-center mb-5">
                     <img
-                        src={`${import.meta.env.VITE_API_URL_IMG}/${teamMilan.logo}`}
+                        src="../../public//Logo_of_AC_Milan.svg.png"
                         alt="AC Milan Logo"
                         className="mb-4"
                         style={{ width: '150px', height: '200px' }}

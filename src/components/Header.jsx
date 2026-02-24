@@ -25,7 +25,7 @@ export default function Header() {
             </div>
         );
     }
-
+    /*
     // evita di accedere a teamMilan.logo quando teamMilan è ancora undefined
     if (!teamMilan) {
         console.log('teamMilan non ancora disponibile');
@@ -40,6 +40,7 @@ export default function Header() {
             </div>
         );
     }
+        */
 
     return (
         <>
@@ -48,7 +49,7 @@ export default function Header() {
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
                         <div className="d-flex align-items-center mb-3 mb-md-0">
                             <img
-                                src={`${import.meta.env.VITE_API_URL_IMG}/${teamMilan.logo}`}
+                                src="../../public//Logo_of_AC_Milan.svg.png"
                                 alt="Milan Logo"
                                 width="30"
                                 height="40"
@@ -69,7 +70,7 @@ export default function Header() {
                                 </li>
                                 <li className="nav-item">
                                     <Link
-                                        className={`nav-link ${isActive('/matches') ? 'active bg-black' : ''} text-white `}
+                                        className={`nav-link ${isActive('/games') ? 'active bg-black' : ''} text-white `}
                                         to="/games"
                                     >
                                         Partite

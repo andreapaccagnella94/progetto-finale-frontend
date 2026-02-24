@@ -28,13 +28,12 @@ export default function GamesPage() {
 
     // effetto per recuperare le partite al montaggio del componente
     useEffect(fetchGames, []);
-    console.log(games);
+
 
 
     // recupero solo le partite del Milan
-    console.log(Array.isArray(games));
     const gamesMilan = games.filter(game => game.team_home.nome == "Milan" || game.team_away.nome == "Milan");
-    console.log(gamesMilan);
+
 
     // caricamento 
     if (isLoading) {
