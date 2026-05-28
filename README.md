@@ -1,16 +1,93 @@
-# React + Vite
+# 🚀 Progetto: Frontend React - Progetto Finale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Benvenuto! Questo repository contiene il frontend dell'applicazione realizzata con React e Vite come progetto finale del corso Boolean. 
 
-Currently, two official plugins are available:
+## Panoramica 📌
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧩 Stack: React 19 + Vite
+- 🎨 UI: Bootstrap 5 + bootstrap-icons
+- 🔁 Routing client-side con `react-router-dom`
+- 📡 Richieste HTTP con `axios`
 
-## React Compiler
+Questa single-page app mostra pagine relative a giocatori, partite e squadre, con componenti riutilizzabili, stato globale tramite Context API e layout condivisi.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funzionalità principali ✨
 
-## Expanding the ESLint configuration
+- ✅ Navigazione fra pagine (`Home`, `Games`, `Players`, `Player`)
+- 🧩 Componenti riutilizzabili (`Header`, `Footer`, `BadgeScore`, `BadgeTeam`, `Loading`)
+- 🌐 Comunicazione con API esterne (via `axios`)
+- 🔄 Stato globale con `GlobalContext`
+- ⚡ Sviluppo rapido con Vite (HMR)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requisiti 🧾
+
+- Node.js (consigliato LTS)
+- npm
+
+## Installazione e avvio (sviluppo) ⚙️
+
+1. Clona il repository
+
+```bash
+git clone <url-repo>
+```
+
+2. Entra nella cartella del frontend
+
+```bash
+cd progetto-finale-frontend
+```
+
+3. Installa le dipendenze
+
+```bash
+npm install
+```
+
+4. Avvia il server di sviluppo
+
+```bash
+npm run dev
+```
+
+5. (Opzionale) Build di produzione e anteprima
+
+```bash
+npm run build
+npm run preview
+```
+
+## Struttura del progetto (riferimenti utili) 🗂️
+
+- `src/` — codice sorgente principale
+  - `App.jsx`, `main.jsx`, `index.css`
+  - `components/` — componenti UI (`Header`, `Footer`, `BadgeScore`, `BadgeTeam`, `Loading`)
+  - `pages/` — pagine (`HomePage`, `GamesPage`, `PlayersPage`, `PlayerPage`)
+  - `contexts/GlobalContext.jsx` — stato globale con Context API
+  - `layouts/DefaultLayout.jsx` — layout principale
+
+## Suggerimenti per chi esplora la repository 💡
+
+- Per capire rapidamente: apri `src/pages` e `src/components` per vedere la struttura delle view e dei componenti.
+- Controlla `src/contexts/GlobalContext.jsx` per comprendere la gestione dello stato condiviso.
+
+## Note per i recruiter / riferimenti professionali 📬
+
+Questo repository è una vetrina dei miei lavori. Se vuoi visionare altri progetti o il mio CV, contattami via email o LinkedIn e ti fornirò volentieri materiale aggiuntivo.
+
+- ✉️ Email: paccagnella.andrea@outlook.com
+- 💼 LinkedIn: https://www.linkedin.com/in/paccagnella-andrea/
+
+
+## Contribuire 🤝
+
+Questo repository è principalmente personale. Suggerimenti e issue sono benvenuti — apri una issue o una pull request.
+
+---
+
+## Licenza 📝
+
+Progetto rilasciato sotto licenza MIT.
+
+---
+
